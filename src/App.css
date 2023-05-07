@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #99ffd8;
+  background-image: radial-gradient(
+      at 63% 90%,
+      hsla(149, 100%, 60%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 29% 8%, hsla(103, 100%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 89% 72%, hsla(205, 100%, 66%, 1) 0px, transparent 50%),
+    radial-gradient(at 82% 88%, hsla(149, 100%, 63%, 1) 0px, transparent 50%);
+  display: grid;
+  place-content: center;
+}
+
+.birthday-card {
+  background-color: rgb(111, 153, 231);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 0.7rem;
+  box-shadow: 2px 2px 12px #353535;
+  min-height: 30rem;
+  min-width: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.birthday-card .person {
+  /* padding: 0.8em; */
+  width: 100%;
+}
+
+.birthday-card h2 {
+  color: antiquewhite;
+  text-shadow: 1px 1px 2px #353535;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(23, 38, 66);
+  color: antiquewhite;
+}
+.person > div {
+  display: flex;
+  align-items: center;
+}
+.person-info {
+  justify-self: flex-start;
+}
+.person-img {
+  width: 80px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  padding: 0 1rem 1rem 0;
+  margin: 0.5rem 1.5rem 0;
+}
